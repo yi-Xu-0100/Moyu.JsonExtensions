@@ -9,6 +9,7 @@
     <Nullable>enable</Nullable>
     <Version>1.4.0</Version>
     <PackageId>Moyu.JsonExtensions</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>yiXu</Authors>
     <Description>Elegant JSON extension methods for .NET</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -16,4 +17,7 @@
     <RepositoryUrl>https://github.com/yi-Xu-0100/Moyu.JsonExtensions</RepositoryUrl>
   </PropertyGroup>
 
+<ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+</ItemGroup>
 </Project>
