@@ -8,6 +8,9 @@
     <PackageId>Moyu.JsonExtensions</PackageId>
     <Authors>yiXu</Authors>
     <Description>Elegant JSON extension methods for .NET</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/yi-Xu-0100/Moyu.JsonExtensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yi-Xu-0100/Moyu.JsonExtensions</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
