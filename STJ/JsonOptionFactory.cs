@@ -9,7 +9,7 @@ namespace Moyu.JsonExtensions.STJ;
 /// <summary>
 /// 提供根据 JsonOptionType 创建并缓存 JsonSerializerOptions 的工厂方法。
 /// </summary>
-public static class JsonOptionFactory
+internal static class JsonOptionFactory
 {
     private static readonly ConcurrentDictionary<JsonOptionType, JsonSerializerOptions> _cache = new();
 
@@ -18,7 +18,7 @@ public static class JsonOptionFactory
     /// </summary>
     /// <param name="type">Json 配置类型，默认 IndentEnc。</param>
     /// <returns>JsonSerializerOptions 实例。</returns>
-    public static JsonSerializerOptions Create(JsonOptionType type = JsonOptionType.IndentEnc)
+    internal static JsonSerializerOptions Create(JsonOptionType type = JsonOptionType.IndentEnc)
     {
         return _cache.GetOrAdd(type, CreateOptionsInternal);
     }
